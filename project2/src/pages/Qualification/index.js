@@ -13,10 +13,10 @@ export default function Qualifications() {
       <h1 className='mode'>Qualifications</h1>
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-          <Avatar alt="RGR Siddhanthi" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSPcHLQr7yXRS3xTzz-fDmcbo_3WbimLnvW5-w8r5IJQ&s" />
+          <Avatar alt="Sree chaitanya" src="https://content3.jdmagicbox.com/comp/karimnagar/r1/9999px878.x878.180820235825.x2r1/catalogue/sree-chaitanya-institute-of-technological-sciences-karimnagar-engineering-colleges-b636ezca1p.jpg"/>
         </ListItemAvatar>
         <ListItemText
-          primary="RGR Siidhanthi Degree College"
+          primary="Sree chaitanya institute of technological science"
           secondary={
             <React.Fragment>
               <Typography
@@ -25,7 +25,7 @@ export default function Qualifications() {
                 variant="body2"
                 color="text.primary"
               >
-                86% CGPA
+                60% CGPA
               </Typography>
               {" — B Com Computer Applications, Information Technology"}
             </React.Fragment>
@@ -35,10 +35,10 @@ export default function Qualifications() {
       <Divider variant="inset" component="li" />
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-          <Avatar alt="Sri Aadarsh" src="https://www.w3schools.com/howto/img_avatar.png" />
+          <Avatar alt="Sri chaitanya" src="https://content.jdmagicbox.com/comp/hyderabad/76/040p8400176/catalogue/sri-chaitanya-girls-residential-college-nizampet-hyderabad-colleges-r141wgvgei.jpg?clr=38382e" />
         </ListItemAvatar>
         <ListItemText
-          primary="Sri Aadarsh Junior College"
+          primary="Sri chaitanya Junior College"
           secondary={
             <React.Fragment>
               <Typography
@@ -47,20 +47,19 @@ export default function Qualifications() {
                 variant="body2"
                 color="text.primary"
               >
-                84% CGPA
+                73% CGPA
               </Typography>
-              {" — Intermediate studies with Computers & Commerce"}
+              {" — Intermediate studies with mpc"}
             </React.Fragment>
           }
         />
       </ListItem>
       <Divider variant="inset" component="li" />
       <ListItem alignItems="flex-start">
-        <ListItemAvatar>
-          <Avatar alt="Sai SI" src="https://55knots.com.au/wp-content/uploads/2021/01/Zanj-Avatar-scaled.jpg" />
-        </ListItemAvatar>
+        <ListItemAvatar></ListItemAvatar>
+          <Avatar alt="Bhagavathi" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx2U6WVkXqQYY30beMcthUJCDGd0ZRX-xdNg&usqp=CAU"/>
         <ListItemText
-          primary="Sai Siddhartha High School"
+          primary="Bhagavathi High School"
           secondary={
             <React.Fragment>
               <Typography
@@ -69,9 +68,9 @@ export default function Qualifications() {
                 variant="body2"
                 color="text.primary"
               >
-                98% CGPA
+                90% CGPA
               </Typography>
-              {' — Higher Secondory Education with Computer Classes'}
+              {"-Higher Secondary Education With Computer Classes"}
             </React.Fragment>
           }
         />
