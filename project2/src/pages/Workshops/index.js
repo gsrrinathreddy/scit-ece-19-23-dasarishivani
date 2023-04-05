@@ -42,7 +42,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   borderTop: '1px solid rgba(0, 0, 0, .125)',
 }));
 
-export default function Experience() {
+export default function Workshops() {
   const [expanded, setExpanded] = React.useState('panel1');
 
   const handleChange = (panel) => (event, newExpanded) => {
@@ -71,16 +71,7 @@ export default function Experience() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
-        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography>Project3</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Employee login logout system using rfid using IOT
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
+      
     </div>
   );
 }

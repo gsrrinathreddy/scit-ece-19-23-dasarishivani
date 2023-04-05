@@ -42,7 +42,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   borderTop: '1px solid rgba(0, 0, 0, .125)',
 }));
 
-export default function Experience() {
+export default function Projects() {
   const [expanded, setExpanded] = React.useState('panel1');
 
   const handleChange = (panel) => (event, newExpanded) => {
@@ -53,17 +53,7 @@ export default function Experience() {
     <div>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>Project1</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Ethical Hacking
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-        <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography>Project2</Typography>
+          <Typography>Minor project</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -71,13 +61,23 @@ export default function Experience() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
-        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography>Project3</Typography>
+      <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+        <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
+          <Typography>Major project</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Employee login logout system using rfid using IOT
+           Employee login logout system using rfid using IOT
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
+          <Typography>Project</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Ethical Hacking
           </Typography>
         </AccordionDetails>
       </Accordion>
