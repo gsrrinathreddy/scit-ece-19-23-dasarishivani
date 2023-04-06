@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Aboutus from './pages/Aboutus';
 import Certifications from './pages/Certifications';
 import Contactme from './pages/Contactme';
@@ -9,6 +9,8 @@ import Experience from './pages/Experience';
 import Hobbies from './pages/Hobbies';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
+import Qualifications from './pages/Qualifications';
+import Workshops from './pages/Workshops';
 
 function App() {
   return (
@@ -23,9 +25,9 @@ function App() {
        <Route path="Hobbies" element={<Hobbies/>}/>
        <Route path="Projects" element={<Projects/>}/>
        <Route path="Skills" element={<Skills/>}/>
+       <Route path="Qualifications" element={<Qualifications/>}/>
+       <Route path="Workshops" element={<Workshops/>}/>
        
-       
-       <Navbar/>
        </Routes>
       </BrowserRouter>
     </div>

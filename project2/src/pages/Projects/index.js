@@ -5,6 +5,11 @@ import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
+import axios from 'axios';
+import {useState,useEffect} from 'react';
+import {CircularProgress,Box} from '@mui/material';
+
+
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -43,6 +48,21 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 export default function Projects() {
+  let [loader,setLoader]= useState(true);
+    let [projects, setProjects]=useState(null);
+
+    const connectToServer = async () => axios.get('http://localhost:8000/Projects')
+                                                    .then(res=>{
+                                                        setProjects(res.data)
+                                                        setLoader(false)
+                                                    }).Catch(err => console.log(err))
+
+            useEffect(()=>{
+            connectToServer();
+
+            },[])
+        console.log("Projects",Projects)
+
   const [expanded, setExpanded] = React.useState('panel1');
 
   const handleChange = (panel) => (event, newExpanded) => {

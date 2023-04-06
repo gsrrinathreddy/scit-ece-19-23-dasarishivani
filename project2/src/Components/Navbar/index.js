@@ -14,7 +14,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
-const pages = ['Aboutus','Experience','Skills','Qualifications','Hobbies','Certifications','Contactme','Projects','Workshops' ];
+const pages = ['Aboutus','Experience','Skills','Qualifications','Hobbies','Certifications','Workshops','Projects','Contactme'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Navbar() {
@@ -116,7 +116,7 @@ function Navbar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-                <Link to ={page} style={{textDecoration:"none"}}>
+                <Link to ={page}>
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
